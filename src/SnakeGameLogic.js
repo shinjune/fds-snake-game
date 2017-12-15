@@ -20,7 +20,8 @@ SnakeGameLogic.prototype.up = function() {
   //   this.joints[j].y--;}
   this.joints.unshift({ x: this.joints[0].x, y: this.joints[0].y - 1 })
   this.joints.pop();
-  console.log('up');
+  // console.log('up');
+
   this.direction = 'up'
 
 }
@@ -57,15 +58,17 @@ SnakeGameLogic.prototype.nextState = function() {
   // 한 번 움직여야 할 타이밍마다 실행되는 함수
   // 게임이 아직 끝나지 않았으면 `true`를 반환
   // 게임이 끝났으면 `false`를 반환
-  if (this.direction === 'right') {
-    this.right();
-  } else if (this.direction === 'left') {
-    this.left();
-  } else if (this.direction === 'up') {
-    this.up()
-  } else if (this.direction === 'down') {
-    this.down()
-  }
+
+  // if (this.direction === 'right') {
+  //   this.right();
+  // } else if (this.direction === 'left') {
+  //   this.left();
+  // } else if (this.direction === 'up') {
+  //   this.up()
+  // } else if (this.direction === 'down') {
+  //   this.down()
+  // }
+
   //   this.right();
   // this.left() this.up() this.down()
 
